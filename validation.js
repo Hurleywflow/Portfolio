@@ -8,7 +8,20 @@ function validate() {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
     if (name.value == '' || email.value == '' || msg.value == '') {
-      emptyerror();
+      emptyError();
+    } else if (email) {
+      const emailRegex =
+        /^([A-Za-z\d\.-]+)@([A-Za-z\d-]+)\.([A-Za-z]{2,6})(\.[A-Za-z]{2,6})?$/;
+      email.addEventListener('keyup', (even) => {
+        console.log(even.target.value);
+        if (emailRegex.test(even.target.value)) {
+          email.parentElement.classList.add('valid');
+          email.parentElement.classList.remove('close');
+        } else {
+          email.parentElement.classList.add('close');
+          email.parentElement.classList.remove('valid');
+        }
+      });
     } else {
       loader.style.display = 'flex';
       sendmail(name.value, email.value, msg.value);
@@ -28,7 +41,7 @@ function sendmail(name, email, msg) {
   });
 }
 
-function emptyerror() {
+function emptyError() {
   Swal.fire({
     icon: 'error',
     title: 'Oops...',
@@ -52,5 +65,6 @@ function success() {
   });
   setTimeout(() => {
     location.href = 'index.html';
-  }, 3500);
+  }, 3000);
 }
+

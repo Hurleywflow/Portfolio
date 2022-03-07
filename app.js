@@ -12,9 +12,7 @@ links.forEach((link, i) => {
       setTimeout(() => {
         activeLink = i;
         sections[i].classList.add('active');
-      }, 5);
+      }, 1);
     }
   });
 });
-
-

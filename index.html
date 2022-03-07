@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hurley portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -258,32 +262,40 @@
       <!-- contact section -->
       <section class="contact-section">
         <form class="contact-form" method="post" action="">
-          <input
-            type="text"
-            required
-            autofocus
-            placeholder="Your name"
-            name="name"
-            class="username"
-            id="name"
-            placeholder="name"
-          />
-          <input
-            type="text"
-            placeholder="Your Email Address"
-            name="email"
-            id="email"
-            class="email"
-            placeholder="email"
-            required
-          />
-          <textarea
-            required
-            name="msg "
-            class="message"
-            id="msg"
-            placeholder="Type your message here...."
-          ></textarea>
+          <div class="contact">
+            <input
+              type="text"
+              required
+              autofocus
+              placeholder="Your name"
+              name="name"
+              class="username"
+              id="name"
+              placeholder="name"
+            />
+          </div>
+          <div class="contact">
+            <input
+              type="text"
+              placeholder="Your Email Address"
+              name="email"
+              id="email"
+              class="email"
+              placeholder="email"
+              required
+            />
+            <span class="material-icons tick">done</span>
+            <span class="material-icons cross">close</span>
+          </div>
+          <div class="contact">
+            <textarea
+              required
+              name="msg "
+              class="message"
+              id="msg"
+              placeholder="Type your message here...."
+            ></textarea>
+          </div>
           <button
             name="submit"
             type="submit"
