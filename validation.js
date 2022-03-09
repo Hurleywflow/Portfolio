@@ -68,3 +68,5 @@ function success() {
   }, 3000);
 }
 
+// init AOS
+AOS.init();

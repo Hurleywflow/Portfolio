@@ -1,3 +1,4 @@
+
 // make navbar link for all pages in single page app
 const links = document.querySelectorAll('.link');
 // every page is a section in a index.html page

@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -31,10 +32,12 @@
     <main>
       <!-- home section -->
       <section class="home-section active" id="home-section">
-        <h1 class="hero-heading">
-          hello, i am <br />
-          Hurley
-        </h1>
+        <div>
+          <div class="hero-heading">
+            <h1>hello, i am Hurley</h1>
+          </div>
+          <div class="hero-body"><p>I am a web developer</p></div>
+        </div>
         <img src="img/home.png" class="home-img" alt="" />
       </section>
 
@@ -42,7 +45,7 @@
       <section class="project-section">
         <h1 class="project-heading">some of my projects</h1>
         <div class="project-container">
-          <div class="project-card">
+          <div class="project-card" data-aos="zoom-out-down">
             <img src="img/project-1.png" class="project-img" alt="" />
             <div class="project-content">
               <h1 class="project-title">project 01</h1>
@@ -57,7 +60,7 @@
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-aos="zoom-out-down">
             <img src="img/project-1.png" class="project-img" alt="" />
             <div class="project-content">
               <h1 class="project-title">project 01</h1>
@@ -72,7 +75,7 @@
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-aos="zoom-out-down">
             <img src="img/project-1.png" class="project-img" alt="" />
             <div class="project-content">
               <h1 class="project-title">project 01</h1>
@@ -87,7 +90,7 @@
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-aos="zoom-out-down">
             <img src="img/project-1.png" class="project-img" alt="" />
             <div class="project-content">
               <h1 class="project-title">project 01</h1>
@@ -117,7 +120,12 @@
         <div class="skill-section">
           <h1 class="heading">skills</h1>
           <div class="skills-container">
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">JavaScript</h1>
@@ -126,7 +134,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">React</h1>
@@ -135,7 +148,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">FireBase</h1>
@@ -144,7 +162,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">HTML</h1>
@@ -153,7 +176,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">CSS</h1>
@@ -162,7 +190,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">Git</h1>
@@ -171,7 +204,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">BootStrap</h1>
@@ -180,7 +218,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">WordPress</h1>
@@ -189,7 +232,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">NodeJS</h1>
@@ -198,7 +246,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">TypeScript</h1>
@@ -207,7 +260,12 @@
                 Consequatur, delectus!
               </p>
             </div>
-            <div class="skill-card">
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
               <img src="img/html.png" class="skill-img" alt="" />
               <div class="skill-level">98%</div>
               <h1 class="skill-name">Python</h1>
@@ -221,7 +279,7 @@
         <!-- timeline -->
         <div class="timeline">
           <h1 class="heading">education and experience</h1>
-          <div class="card">
+          <div class="card" data-aos="zoom-out-left">
             <div class="card-body">
               <h1 class="card-title">2000-2002</h1>
               <p class="card-detail">
@@ -233,7 +291,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-out-right">
             <div class="card-body">
               <h1 class="card-title">2000-2002</h1>
               <p class="card-detail">
@@ -245,7 +303,7 @@
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-out-left">
             <div class="card-body">
               <h1 class="card-title">2000-2002</h1>
               <p class="card-detail">
@@ -337,6 +395,7 @@
         emailjs.init('aTrw9fEB6GMrUfi0V');
       })();
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./validation.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./app.js"></script>

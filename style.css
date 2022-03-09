@@ -75,8 +75,17 @@ body {
 
 .hero-heading {
   color: #fff;
-  font-size: 120px;
+  font-size: 80px;
   text-transform: capitalize;
+  font-weight: 300;
+  /* inset do position of elements from all sides in one line  */
+  /* top right bottom left  */
+  /* inset: auto 5px 6px auto */
+}
+.hero-body {
+  margin-top: 50px;
+  color: #f5f5f5;
+  font-size: 40px;
   font-weight: 300;
 }
 
@@ -133,8 +142,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
 }
-
-.project-card {
+@media (max-width: 960px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 100px;
+  }
+}
+medi .project-card {
   height: 400px;
   position: relative;
 }
@@ -274,11 +289,31 @@ body {
 
 .skills-container {
   width: 95%;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 100px;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .skills-container {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    color: #fff;
+  }
+}
+@media (max-width: 560px) {
+  .skills-container {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 100px;
+    color: #fff;
+  }
 }
 
 .skill-card {
@@ -371,6 +406,18 @@ body {
   margin: -80px 0;
   position: relative;
   background: #f00;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    background: #f00;
+  }
 }
 
 .card:nth-child(even) {
@@ -487,7 +534,7 @@ body {
   padding: 5px 10px;
 }
 .contact-form .contact textarea {
-  width: 100%;
+  width: 89%;
   height: 40px;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #fff;
@@ -520,8 +567,8 @@ body {
 }
 
 .map {
-  width: 100%;
-  height: 100%;
+  width: 89%;
+  height: 50%;
   padding: 10px;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.2);
@@ -547,6 +594,30 @@ body {
   background: rgb(0, 0, 0);
   display: none;
 }
+@media (max-width: 960px) {
+  .contact-section {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 1s;
+    padding: 100px 150px;
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    /* want create two or three columns just change repeat(2, 1fr) to repeat(3, 1fr) */
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+  .map {
+    width: 89%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+}
+
 /* validate contact form */
 .tick {
   color: #07cc81;
